@@ -1,0 +1,163 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.5785457293276334 0.5792693516162274 0.5742228290088024 2.098017597126312
+  position 0 0 10
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+SpotLight {
+  attenuation 0 0 1
+  beamWidth 0.7
+  direction 0 1 -1
+  location 3 4 1
+}
+DEF right_leg Transform {
+  translation -0.1 -0.29 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        metalness 0.5
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+}
+DEF left_leg Transform {
+  translation 0.08 -0.29 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        metalness 0.5
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+}
+DEF above_legs Transform {
+  translation -0.01 -0.23 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        roughness 1
+        metalness 0.5
+      }
+      geometry Box {
+        size 0.28 0.05 0.1
+      }
+    }
+  ]
+}
+DEF body Transform {
+  translation -0.01 -0.06 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        roughness 0.3
+        metalness 0.5
+      }
+      geometry Box {
+        size 0.12 0.3 0.1
+      }
+      castShadows FALSE
+    }
+  ]
+}
+DEF head Transform {
+  translation -0.01 0.15 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        roughness 0.3
+        metalness 0.5
+      }
+      geometry Box {
+        size 0.2 0.17 0.1
+      }
+    }
+  ]
+}
+DEF left_eye Transform {
+  translation -0.06 0.18 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        roughness 1
+      }
+      geometry Box {
+        size 0.03 0.03 0.1
+      }
+    }
+  ]
+}
+DEF right_eye Transform {
+  translation 0.04 0.18 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        roughness 1
+      }
+      geometry Box {
+        size 0.03 0.03 0.1
+      }
+    }
+  ]
+}
+DEF upper_mouth Transform {
+  translation -0.01 0.12 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        roughness 1
+      }
+      geometry Box {
+        size 0.1 0.02 0.1
+      }
+    }
+  ]
+}
+DEF left_side_mouth Transform {
+  translation -0.05 0.11 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+      }
+      geometry Box {
+        size 0.02 0.03 0.1
+      }
+    }
+  ]
+}
+DEF right_side_mouth Transform {
+  translation 0.03 0.11 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+      }
+      geometry Box {
+        size 0.02 0.03 0.1
+      }
+    }
+  ]
+}
